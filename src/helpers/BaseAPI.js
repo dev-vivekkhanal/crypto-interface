@@ -1,0 +1,1 @@
+export const BASE_API_ADDRESS = "https://api.coingecko.com/api/v3/"
