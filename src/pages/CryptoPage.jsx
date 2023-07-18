@@ -1,11 +1,17 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 import { allCrypto } from "../helpers/crypToData";
+// recoil
+import { useRecoilState } from "recoil";
+import { selectedCrptoAtom } from "../recoil/selectedCrptoAtom";
 
 const CryptoPage = () => {
-  const [singleCryptoData, setSingleCryptoData] = useState(null);
+  // global variable
+  const [singleCryptoData, setSingleCryptoData] =
+    useRecoilState(selectedCrptoAtom);
   const params = useParams();
 
+  //   filter according to the url param
   useLayoutEffect(() => {
     const filtered = allCrypto?.filter(
       (filterData) => filterData?.id == params?.crypto_id
@@ -17,13 +23,11 @@ const CryptoPage = () => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log("singleCryptoData", singleCryptoData);
-  }, [singleCryptoData]);
-
   return (
-    <div>
-      <h1>{params?.crypto_id}</h1>
+    <div className=" min-h-screen pt-20">
+      <div className="p-5 max-w-[1200px] w-full mx-auto">
+        <h1>Hello</h1>
+      </div>
     </div>
   );
 };
