@@ -9,3 +9,12 @@
 .font-poppins{
     font-family: 'Poppins', sans-serif;
 }
+
+.drop-custom {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.10));
+}
+
+.drop-custom:hover{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+
+}

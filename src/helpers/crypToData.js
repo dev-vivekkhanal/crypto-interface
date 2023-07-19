@@ -16,6 +16,8 @@ export const allCrypto = [
         volume: "12,756,373",
         volume_in_code: "427,423 BTC",
         circulating: "19,432,006 BTC",
+        current_wallet_balance: "3.529020",
+        wallet_change_in_value: -2.32,
         graph_data: [
             {
                 date: "10 July 2023",
@@ -65,7 +67,9 @@ export const allCrypto = [
         marketCap: "227.28B",
         volume: "6,470,931",
         volume_in_code: "3,431,805 ETH",
-        circulating: "120,201,013 BTC",
+        circulating: "120,201,013 ETH",
+        current_wallet_balance: "3.529020",
+        wallet_change_in_value: 5.85,
         graph_data: [
             {
                 date: "10 July 2023",
@@ -117,6 +121,9 @@ export const allCrypto = [
         volume: "895,602,991",
         volume_in_code: "34,269,316 SOL",
         circulating: "402,654,608 SOL",
+        current_wallet_balance: "3.529020",
+        wallet_change_in_value: -1.45,
+
         graph_data: [
             {
                 date: "10 July 2023",
@@ -163,11 +170,14 @@ export const allCrypto = [
         code_name: "BNB",
         logo:bnb,
         currentPrice: "242.64",
-        stats:[0.03, -0.76, -1.00] ,
+        stats:[0.03, -0.76, -1.32] ,
         marketCap: "37.8B",
         volume: "684,186,609",
         volume_in_code: "2,822,713 BNB",
         circulating: "155,848,531 BNB",
+        current_wallet_balance: "3.529020",
+        wallet_change_in_value: 0.99,
+
         graph_data: [
             {
                 date: "10 July 2023",

@@ -4,6 +4,7 @@ import { allCrypto } from "../helpers/crypToData";
 // recoil
 import { useRecoilState } from "recoil";
 import { selectedCrptoAtom } from "../recoil/selectedCrptoAtom";
+import CryptoStatsAndCommerce from "../components/cryptoPage/CryptoStatsAndCommerce";
 
 const CryptoPage = () => {
   // global variable
@@ -26,7 +27,7 @@ const CryptoPage = () => {
   return (
     <div className=" min-h-screen pt-20">
       <div className="p-5 max-w-[1200px] w-full mx-auto">
-        <h1>Hello</h1>
+        <CryptoStatsAndCommerce singleCryptoData={singleCryptoData} />
       </div>
     </div>
   );

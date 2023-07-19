@@ -7,7 +7,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="font-poppins cursor-default text-[#161616] bg-[#F3F5F9] min-h-screen">
+    <div className="font-poppins cursor-default text-[#2e2d2d] bg-[#F3F5F9] min-h-screen">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
