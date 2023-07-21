@@ -1,9 +1,10 @@
+// routing
+import { Routes, Route, Navigate } from "react-router-dom";
+// components and pages
 import Footer from "./components/global/Footer";
 import Header from "./components/global/Header";
 import CryptoPage from "./pages/CryptoPage";
 import HomePage from "./pages/HomePage";
-// routing
-import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (

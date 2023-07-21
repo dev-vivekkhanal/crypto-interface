@@ -22,37 +22,37 @@ export const allCrypto = [
             {
                 date: "10 July 2023",
                 time: "07:00:00 AM",
-                price: "26,521.10"
+                price: 26521.10
             },
             {
                 date: "10 July 2023",
                 time: "10:00:00 PM",
-                price: "27,124.85"
+                price: 27124.85
             },
             {
                 date: "11 July 2023",
                 time: "06:00:00 AM",
-                price: "25,000.12"
+                price: 25000.12
             },
             {
                 date: "11 July 2023",
                 time: "11:00:00 PM",
-                price: "25,754.34"
+                price: 25754.34
             },
             {
                 date: "12 July 2023",
                 time: "09:00:00 AM",
-                price: "28,012.54"
+                price: 28012.54
             },
             {
                 date: "12 July 2023",
                 time: "11:00:00 PM",
-                price: "27,542.01"
+                price: 27542.01
             },
             {
                 date: "13 July 2023",
                 time: "10:30:00 AM",
-                price: "29,542.42"
+                price: 29542.42
             },
         ]
     },
@@ -74,37 +74,37 @@ export const allCrypto = [
             {
                 date: "10 July 2023",
                 time: "07:00:00 AM",
-                price: "1,527.10"
+                price: 1527.10
             },
             {
                 date: "10 July 2023",
                 time: "10:00:00 PM",
-                price: "1,625.70"
+                price: 1625.70
             },
             {
                 date: "11 July 2023",
                 time: "06:00:00 AM",
-                price: "1,112.12"
+                price: 1112.12
             },
             {
                 date: "11 July 2023",
                 time: "11:00:00 PM",
-                price: "1,100.54"
+                price: 1100.54
             },
             {
                 date: "12 July 2023",
                 time: "09:00:00 AM",
-                price: "1,600.65"
+                price: 1600.65
             },
             {
                 date: "12 July 2023",
                 time: "11:00:00 PM",
-                price: "1,102.21"
+                price: 1102.21
             },
             {
                 date: "13 July 2023",
                 time: "10:30:00 AM",
-                price: "1,799.54"
+                price: 1799.54
             },
         ]
     },
@@ -128,37 +128,37 @@ export const allCrypto = [
             {
                 date: "10 July 2023",
                 time: "07:00:00 AM",
-                price: "29.99"
+                price: 29.99
             },
             {
                 date: "10 July 2023",
                 time: "10:00:00 PM",
-                price: "28.65"
+                price: 28.65
             },
             {
                 date: "11 July 2023",
                 time: "06:00:00 AM",
-                price: "22.16"
+                price: 22.16
             },
             {
                 date: "11 July 2023",
                 time: "11:00:00 PM",
-                price: "20.65"
+                price: 20.65
             },
             {
                 date: "12 July 2023",
                 time: "09:00:00 AM",
-                price: "29.21"
+                price: 29.21
             },
             {
                 date: "12 July 2023",
                 time: "11:00:00 PM",
-                price: "21.00"
+                price: 21.00
             },
             {
                 date: "13 July 2023",
                 time: "10:30:00 AM",
-                price: "25.32"
+                price: 25.32
             },
         ]
     },
@@ -182,37 +182,37 @@ export const allCrypto = [
             {
                 date: "10 July 2023",
                 time: "07:00:00 AM",
-                price: "245.12"
+                price: 245.12
             },
             {
                 date: "10 July 2023",
                 time: "10:00:00 PM",
-                price: "201.45"
+                price: 201.45
             },
             {
                 date: "11 July 2023",
                 time: "06:00:00 AM",
-                price: "222.32"
+                price: 222.32
             },
             {
                 date: "11 July 2023",
                 time: "11:00:00 PM",
-                price: "258.10"
+                price: 258.10
             },
             {
                 date: "12 July 2023",
                 time: "09:00:00 AM",
-                price: "277.02"
+                price: 277.02
             },
             {
                 date: "12 July 2023",
                 time: "11:00:00 PM",
-                price: "231.02"
+                price: 231.02
             },
             {
                 date: "13 July 2023",
                 time: "10:30:00 AM",
-                price: "255.11"
+                price: 255.11
             },
         ]
     },

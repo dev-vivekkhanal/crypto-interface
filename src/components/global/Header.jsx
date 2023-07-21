@@ -1,10 +1,14 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 // assets
 import logo from "../../assets/logo.svg";
 // mui icons
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
+import EditNoteRoundedIcon from "@mui/icons-material/EditNoteRounded";
+import InfoRoundedIcon from "@mui/icons-material/InfoRounded";
+import ShareRoundedIcon from "@mui/icons-material/ShareRounded";
+import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
 // recoil
 import { useRecoilState } from "recoil";
 import { searchAtom } from "../../recoil/searchAtom";
@@ -19,7 +23,29 @@ const Header = () => {
   // local variables
   const location = useLocation();
   const params = useParams();
-
+  const [showMenu, setShowMenu] = useState(false);
+  const menuItems = [
+    {
+      id: 1,
+      name: "Edit",
+      icon: <EditNoteRoundedIcon />,
+    },
+    {
+      id: 2,
+      name: "Crypto info",
+      icon: <InfoRoundedIcon />,
+    },
+    {
+      id: 3,
+      name: "Share",
+      icon: <ShareRoundedIcon />,
+    },
+    {
+      id: 4,
+      name: "Delete",
+      icon: <DeleteForeverRoundedIcon />,
+    },
+  ];
   //   filter according to the url param
   useLayoutEffect(() => {
     const filtered = allCrypto?.filter(
@@ -35,7 +61,7 @@ const Header = () => {
   return (
     <>
       {location?.pathname == "/" ? (
-        <header className=" bg-white fixed inset-x-0 top-0">
+        <header className=" bg-white fixed inset-x-0 top-0 z-10">
           <div className=" p-5 max-w-[1200px] w-full mx-auto flex flex-col sm:flex-row  gap-5 justify-between sm:items-center">
             <div>
               <Link to="/">
@@ -82,7 +108,7 @@ const Header = () => {
           </div>
         </header>
       ) : (
-        <header className=" bg-white fixed inset-x-0 top-0">
+        <header className=" bg-white fixed inset-x-0 top-0 z-20">
           <div className="p-5 max-w-[1200px] w-full mx-auto flex justify-between items-center">
             <Link
               to="/"
@@ -94,10 +120,46 @@ const Header = () => {
               {singleCryptoData && singleCryptoData[0]?.name + " Wallet"}
             </h1>
 
-            <button className=" transition-all  active:bg-gray-200 hover:bg-gray-100 aspect-square rounded-full w-[35px] flex justify-center items-center">
+            <button
+              onClick={() => setShowMenu(true)}
+              className=" transition-all  active:bg-gray-200 hover:bg-gray-100 aspect-square rounded-full w-[35px] flex justify-center items-center relative"
+            >
               <MoreVertRoundedIcon className="text-gray-500" />
+
+              {showMenu && (
+                <div
+                  onClick={() => setShowMenu(false)}
+                  className="absolute top-[100%] right-0 w-max bg-white  z-30 rounded-lg overflow-hidden"
+                >
+                  {menuItems?.map((data, index) => {
+                    return (
+                      <div
+                        key={data?.id}
+                        className={` ${
+                          data?.name === "Delete"
+                            ? "text-red-500"
+                            : "text-gray-600"
+                        } ${
+                          index === menuItems?.length - 1 ? "" : "border-b"
+                        } flex justify-between items-center gap-5 font-medium  p-3 hover:bg-gray-100 active:bg-gray-200  transition-all `}
+                      >
+                        <h1>{data?.name}</h1>
+                        <span>{data?.icon}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </button>
           </div>
+
+          {/* overlay and menu */}
+          {showMenu && (
+            <div
+              onClick={() => setShowMenu(false)}
+              className="fixed inset-0 bg-black bg-opacity-25 transition-all z-20 "
+            ></div>
+          )}
         </header>
       )}
     </>

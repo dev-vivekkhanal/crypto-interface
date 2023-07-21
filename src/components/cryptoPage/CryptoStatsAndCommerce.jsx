@@ -1,9 +1,9 @@
-import React from "react";
+import { useState } from "react";
 // mui
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 import ArrowDropUpRoundedIcon from "@mui/icons-material/ArrowDropUpRounded";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import { useState } from "react";
+// components
 import BigButtons from "./BigButtons";
 
 const CryptoStatsAndCommerce = (props) => {
@@ -12,7 +12,7 @@ const CryptoStatsAndCommerce = (props) => {
     Number(props?.singleCryptoData?.[0]?.currentPrice?.split(",")?.join("")) *
     Number(props?.singleCryptoData?.[0]?.current_wallet_balance);
   return (
-    <section className="bg-white p-5 rounded-xl drop-shadow-xl">
+    <section className="bg-white p-5 rounded-xl drop-custom">
       <div className="flex justify-between items-center mb-5">
         <div className="flex gap-5 items-center">
           <img
@@ -69,8 +69,8 @@ const CryptoStatsAndCommerce = (props) => {
       {/* hidden section */}
       <div
         className={` ${
-          arrowStatus ? " max-h-[999px] ease-in" : " max-h-0 ease-out "
-        }  transition-all duration-200 h-full  overflow-hidden`}
+          arrowStatus ? " max-h-[500px] ease-in" : " max-h-0 ease-out "
+        }  transition-all duration-500 h-full  overflow-hidden`}
       >
         <div className="flex gap-5 p-5 justify-center items-center">
           <BigButtons
@@ -90,9 +90,9 @@ const CryptoStatsAndCommerce = (props) => {
           onClick={() => setArrowStatus(!arrowStatus)}
           className={` ${
             arrowStatus ? " rotate-90" : " -rotate-90"
-          } transition-all duration-200   hover:bg-gray-100 active:bg-gray-200  w-[40px] aspect-square flex justify-center items-center rounded-full `}
+          } transition-all duration-500 hover:bg-gray-100 active:bg-gray-200  w-[40px] aspect-square flex justify-center items-center rounded-full `}
         >
-          <ArrowBackIosNewRoundedIcon />
+          <ArrowBackIosNewRoundedIcon className="" />
         </button>
       </div>
     </section>
