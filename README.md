@@ -7,11 +7,11 @@ A landing page and wallet page developed using React JS and Tailwind CSS
 ## Screenshots 📷📸
 
 <div align="center">
-  <img src="/src/assets/screenshot-1.png" alt=" Page1" width="100%" />
-  <img src="/src/assets/screenshot-2.png" alt=" Page2" width="100%" />
-  <img src="/src/assets/screenshot-3.png" alt="  Page2" width="100%" />
-  <img src="/src/assets/screenshot-4.png" alt="  Page2" width="100%" />
-  <img src="/src/assets/screenshot-5.png" alt="  Page2" width="100%" />
+  <img src="/assets/screenshot-1.png" alt=" Page1" width="100%" />
+  <img src="/assets/screenshot-2.png" alt=" Page2" width="100%" />
+  <img src="/assets/screenshot-3.png" alt="  Page2" width="100%" />
+  <img src="/assets/screenshot-4.png" alt="  Page2" width="100%" />
+  <img src="/assets/screenshot-5.png" alt="  Page2" width="100%" />
   <br>
 </div>
 
